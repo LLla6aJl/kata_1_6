@@ -1,0 +1,59 @@
+.row__item {
+  display: block;
+  margin-right: 10px;
+}
+
+.sidebar-langs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+  margin-block-end: 0;
+
+  li {
+    &:not(:first-child) {
+      margin-left: 5px;
+    }
+  }
+}
+
+.langs__item {
+  display: block;
+  font-size: $fs16;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.sidebar__mail {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $text-color;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.sidebar__number {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 32px;
+  text-decoration: none;
+  color: $text-color;
+}
+
+.langs__item_active {
+  a {
+    margin-left: 0px;
+    color: $text-grey;
+  }
+}

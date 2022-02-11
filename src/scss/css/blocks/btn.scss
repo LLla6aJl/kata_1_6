@@ -1,0 +1,21 @@
+.btn {
+  background-color: $btn;
+  border: 1px solid $btn;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $btn-shadow2 inset, 0 0 10px 4px $btn-shadow;
+    background-color: $btn;
+    border: 2px solid $btn-shadow2;
+    outline: none;
+  }
+}
+
+.btn__img-default {
+  vertical-align: middle;
+}

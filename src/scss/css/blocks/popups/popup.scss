@@ -1,0 +1,129 @@
+.popup, .call-request-popup {
+  width: 320px;
+  min-width: 320px;
+  height: 676px;
+  position: fixed;
+  right: 0;
+  padding: 23px 16px;
+  -webkit-transition: left 0.75s;
+  -moz-transition: left 0.75s;
+  transition: left 0.75s;
+  background: $bg-white;
+  z-index: 2000;
+  overflow-y: visible;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+  16px 0px 52px rgba(14, 24, 80, 0.2);
+  display: none;
+
+  @include media-notebook {
+    width: 440px;
+    min-width: 440px;
+    height: 940px;
+    padding: 23px 32px;
+  }
+
+  &:after {
+    content: "";
+    width: 4px;
+    height: 40px;
+    background-color: $active;
+    position: absolute;
+    left: 1px;
+    top: 100px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+
+  p {
+    font-size: $font-default;
+    font-weight: 500;
+    line-height: 16px;
+    color: $text-grey;
+    text-decoration: none;
+    margin-bottom: 19px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $btn;
+  }
+
+  @include media-notebook {
+    &::after {
+      content: "";
+      width: 3px;
+      height: 40px;
+      background-color: #41F6D7;
+      position: absolute;
+      left: 1px;
+      top: 35px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+  }
+}
+
+  .popup__paragraph {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+
+    @include media-notebook {
+      margin-top: 20px;
+    }
+  }
+
+  .popup__input {
+    width: 288px;
+    height: 48px;
+    border: 1px solid $separator;
+    border-radius: 8px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+
+    @include media-notebook {
+      width: 376px;
+    }
+  }
+
+  .feedback__input_comment {
+    padding: 10px 15px;
+    height: 118px;
+  }
+
+  .btn_popup {
+    width: 136px;
+    height: 32px;
+    border-radius: 16px;
+    font-size: 12px;
+    color: $bg-white;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0 39px 0 16px;
+    position: relative;
+    margin-left: 150px;
+
+    @include media-notebook {
+      margin-left: 250px;
+    }
+
+    &:after {
+      position: absolute;
+      top: 10px;
+      right: 18px;
+      content: "";
+      width: 7px;
+      height: 10px;
+      background-image: url("../img/content-img/arrow-right.svg");
+    }
+  }
+
+
+
+
+

@@ -1,0 +1,55 @@
+.brend-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  background: $bg-white;
+  border: 1px solid $separator;
+  border-radius: 6px;
+  min-width: 0;
+  padding: 13px 16px;
+  box-sizing: border-box;
+
+  @include media-tablet {
+    width: 224px;
+  }
+
+  @include media-notebook {
+    width: 240px;
+  }
+
+  &_types {
+    height: 160px;
+    padding: 16px 16px;
+  }
+}
+
+.repair-types__text {
+  align-self: start;
+  font-size: $fs16;
+  Letter-spacing: -0.2px;
+  font-weight: 500;
+}
+
+.brend-btn {
+  border: 2px solid $btn;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 0 0;
+
+  &_bottom {
+    align-self: end;
+  }
+}
+
+.item__box {
+  position: relative;
+
+  @include media-tablet {
+    display: flex;
+    align-items: center;
+  }
+}

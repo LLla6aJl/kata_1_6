@@ -1,0 +1,56 @@
+.swiper {
+  &-wrapper {
+    padding: 0 16px;
+    justify-content: space-between;
+
+    @include media-tablet {
+      flex-wrap: wrap;
+      height: 170px;
+      align-content: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  &-pagination {
+    position: sticky;
+    bottom: -40px !important;
+
+    @include media-tablet {
+      position: absolute;
+    }
+  }
+
+  &-slide__price {
+    margin-right: 32px;
+  }
+}
+
+.read-more_open-brend,
+.read-more_close-brend,
+.read-more_open-brend-2,
+.read-more_close-brend-2 {
+  display: none;
+}
+
+@include media-tablet {
+  .swiper-slide {
+    flex: 1 1 224px;
+    max-width: 224px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    height: 72px;
+    margin-right: 24px;
+  }
+
+  .slide_high {
+    height: 160px;
+  }
+
+  .read-more_open-brend {
+    display: block;
+  }
+
+  .read-more_open-brend-2 {
+    display: block;
+  }
+}

@@ -1,0 +1,43 @@
+.content-list {
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-left: 0;
+
+  @include media-notebook {
+    flex-wrap: wrap;
+  }
+
+  &:after {
+    content: "";
+    flex-grow: 0.9;
+  }
+
+  &__item {
+    display: inline;
+    font-family: "TT Lakes", sans-serif;
+    font-size: $fs16;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    color: $text-grey;
+    white-space: nowrap;
+    padding: 8px 16px;
+    border-radius: 6px;
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      color: $text-grey;
+    }
+
+    &:hover {
+      outline: none;
+      background-color: $bg-white;
+      border: 2px solid $active;
+      border-radius: 6px;
+      padding: 6px 14px;
+    }
+  }
+}

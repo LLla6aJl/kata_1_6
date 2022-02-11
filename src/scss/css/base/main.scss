@@ -1,0 +1,58 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+body {
+  min-width: $mobile-width;
+  overflow-x: hidden;
+  font-family: "TT Lakes", sans-serif;
+  font-size: $font-default;
+  background: $bg-white;
+  width: 100%;
+  max-width: 100%;
+
+  @include media-notebook {
+    background-color: $gradient;
+    max-width: 1440px;
+  }
+
+  @include media-desktop {
+    margin: 0 auto;
+  }
+}
+
+@include media-notebook {
+  .box {
+    display: flex;
+    background: $bg-white;
+  }
+}
+
+.wrapper {
+  background: $bg-white;
+  opacity: 1;
+}
+
+.section {
+  padding-top: 24px;
+  background-color: $gradient;
+}
+
+
+
+
+
+

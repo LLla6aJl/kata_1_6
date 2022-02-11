@@ -1,0 +1,121 @@
+.price-table-caption {
+  display: none;
+
+  @include media-tablet {
+    display: flex;
+    padding: 16px 0px 16px 24px;
+    justify-content: space-between;
+    color: $text-grey;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+  }
+}
+
+.price-list__item {
+  display: flex;
+  flex-direction: column;
+  background: $bg-white;
+  width: 260px;
+  height: 200px;
+  padding: 0 16px 0 16px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  line-height: 18px;
+
+  @include media-tablet {
+    width: auto;
+    height: 64px;
+    flex-direction: row;
+    align-items: center;
+    padding: 23px 16px 23px 16px;
+    justify-content: space-between;
+    color: $text-color;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    border-bottom: solid 1px $separator;
+    border-radius: 0;
+  }
+}
+
+.item__title {
+  color: $text-grey;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+
+  @include media-tablet {
+      display: none;
+  }
+}
+
+.btn_price-list {
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  font-size: 12px;
+  color: $bg-white;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 12px;
+  position: absolute;
+  top: -10px;
+  right: 5px;
+
+  &:after {
+    position: absolute;
+    top: 9px;
+    right: 11px;
+    content: "";
+    width: 7px;
+    height: 9.63px;
+    background-image: url("../img/content-img/arrow-right.svg");
+  }
+
+  @include media-tablet {
+    position: static;
+    margin-left: 20px;
+  }
+}
+
+@include media-tablet {
+
+  .swiper-wrapper__price {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 0 0;
+  }
+
+  .swiper-slide__price {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+    max-width: none;
+    margin-bottom: 0;
+  }
+
+  .price-wrap {
+    padding: 0px 16px 0px 16px;
+  }
+
+  .item__repair-services {
+    width: 372px;
+  }
+
+  .item__repair-price {
+    width: 96px;
+  }
+
+  .item__repair-time {
+    display: inline-block;
+    width: 101px;
+  }
+
+  .item__wrap {
+    width: 150px;
+  }
+}
